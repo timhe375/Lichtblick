@@ -15,6 +15,11 @@ main {
   text-align: center;
 }
 
+button,
+button:hover {
+  border-radius: 10px;
+  color-scheme: unset;
+}
 @media screen and (min-width: 768px) {
   html {
     font-size: 18px;
@@ -55,9 +60,56 @@ a:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-content: space-between;
 }
 #header {
   position: relative;
   margin: 2rem 4rem 2rem 2rem;
+}
+
+/*Main Styling*/
+
+main {
+  display: block;
+  width: 100%;
+  padding: 0em;
+}
+
+section {
+  text-align: center;
+}
+
+main .klimaneutral {
+  background-color: grey;
+  padding: 44px 0px 44px 0px;
+  margin-top: -4px;
+  margin-bottom: 20px;
+}
+main .heizen {
+  background-color: plum;
+  padding: 44px 0px 44px 0px;
+}
+.klimareformen {
+  background-color: #2ea043;
+  padding: 44px 0px 44px 0px;
+}
+
+article {
+  width: 500px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.E-Mobilität {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: -15px;
+  position: relative;
+  z-index: -1;
+  border-radius: 10px 10px 0 0;
+}
+.card-section {
+  display: grid;
+  align-items: center;
+  position: relative;
+  justify-content: center;
 }
