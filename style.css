@@ -76,7 +76,12 @@ main {
 section {
   text-align: center;
 }
-
+.klimareformen-button {
+  background-color: #2ea043;
+}
+.heizen-button {
+  background-color: plum;
+}
 .klimaneutral {
   background-color: grey;
   padding: 44px 0px 44px 0px;
@@ -127,4 +132,17 @@ a:visited {
 }
 .nav-item {
   padding: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .card-section,
+  article {
+    display: block;
+    width: auto;
+  }
+}
+@media screen and(max-width:500px) {
+  #navigation > li {
+    align-self: stretch;
+  }
 }
