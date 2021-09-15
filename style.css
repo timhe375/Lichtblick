@@ -127,22 +127,17 @@ footer {
   flex-direction: column;
   padding: 25px;
 }
-a:visited {
+li a:visited {
   color: white;
 }
 .nav-item {
   padding: 25px;
 }
-
+/*Responsive Gridbox*/
 @media screen and (max-width: 500px) {
   .card-section,
   article {
     display: block;
     width: auto;
-  }
-}
-@media screen and(max-width:500px) {
-  #navigation > li {
-    align-self: stretch;
   }
 }
