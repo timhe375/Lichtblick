@@ -42,3 +42,22 @@ a:visited,
 a:active {
   color: black;
 }
+
+/*Header Styling*/
+
+.header-logo {
+  max-width: 100%;
+}
+.lichtblick-logo {
+  width: 150px;
+}
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+#header {
+  position: relative;
+  margin: 2rem 4rem 2rem 2rem;
+}
