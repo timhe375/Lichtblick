@@ -18,11 +18,11 @@ main {
 button,
 button:hover {
   border-radius: 10px;
-  color-scheme: unset;
 }
 @media screen and (min-width: 768px) {
   html {
     font-size: 18px;
+    width: 100%;
   }
 }
 
@@ -37,7 +37,6 @@ li {
 }
 body {
   margin: 0;
-  width: 100%;
 }
 
 a,
@@ -78,13 +77,13 @@ section {
   text-align: center;
 }
 
-main .klimaneutral {
+.klimaneutral {
   background-color: grey;
   padding: 44px 0px 44px 0px;
   margin-top: -4px;
   margin-bottom: 20px;
 }
-main .heizen {
+.heizen {
   background-color: plum;
   padding: 44px 0px 44px 0px;
 }
@@ -112,4 +111,20 @@ article {
   align-items: center;
   position: relative;
   justify-content: center;
+  flex-direction: row;
+}
+footer {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  margin: 55px auto;
+  background-color: black;
+  flex-direction: column;
+  padding: 25px;
+}
+a:visited {
+  color: white;
+}
+.nav-item {
+  padding: 25px;
 }
