@@ -1,5 +1,10 @@
 /**************************************************************/
 /* General Stylings */
+:root {
+  --akzentfarbe: plum;
+  --background: #2ea043;
+  --paddingcard: 44px 0px 44px 0px;
+}
 
 *,
 *:before,
@@ -7,14 +12,16 @@
   box-sizing: border-box;
 }
 
-main {
+html {
   font-family: "Roboto", sans-serif;
 }
-#header {
+.header {
   font-family: "Lato", sans-serif;
   text-align: center;
 }
-
+nav a {
+  text-decoration: none;
+}
 button,
 button:hover {
   border-radius: 10px;
@@ -31,22 +38,10 @@ button:hover {
     font-size: 20px;
   }
 }
-li {
-  list-style: none;
-  align-content: space-between;
-}
+
 body {
   margin: 0;
 }
-
-a,
-a:link,
-a:hover,
-a:visited,
-a:active {
-  color: black;
-}
-
 /*Header Styling*/
 
 .header-logo {
@@ -55,14 +50,16 @@ a:active {
 .lichtblick-logo {
   width: 150px;
 }
-#navigation {
+.navigation,
+.navigation ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-#header {
-  position: relative;
   margin: 2rem 4rem 2rem 2rem;
+}
+
+header {
+  position: relative;
 }
 
 /*Main Styling*/
@@ -77,10 +74,10 @@ section {
   text-align: center;
 }
 .klimareformen-button {
-  background-color: #2ea043;
+  background-color: var(--background);
 }
 .heizen-button {
-  background-color: plum;
+  background-color: var(--akzentfarbe);
 }
 .klimaneutral {
   background-color: grey;
@@ -89,12 +86,12 @@ section {
   margin-bottom: 20px;
 }
 .heizen {
-  background-color: plum;
-  padding: 44px 0px 44px 0px;
+  background-color: var(--akzentfarbe);
+  padding: var(--paddingcard);
 }
 .klimareformen {
-  background-color: #2ea043;
-  padding: 44px 0px 44px 0px;
+  background-color: var(--background);
+  padding: var(--paddingcard);
 }
 
 article {
@@ -103,7 +100,7 @@ article {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.E-Mobilität {
+.mobilitaet {
   width: 100%;
   margin-top: 10px;
   margin-left: -15px;
@@ -118,21 +115,6 @@ article {
   justify-content: center;
   flex-direction: row;
 }
-footer {
-  display: flex;
-  width: 100%;
-  text-align: center;
-  margin: 55px auto;
-  background-color: black;
-  flex-direction: column;
-  padding: 25px;
-}
-li a:visited {
-  color: white;
-}
-.nav-item {
-  padding: 25px;
-}
 /*Responsive Gridbox*/
 @media screen and (max-width: 500px) {
   .card-section,
@@ -140,4 +122,20 @@ li a:visited {
     display: block;
     width: auto;
   }
+}
+
+/* Footer Styling*/
+footer {
+  width: 100%;
+  text-align: center;
+  margin: 55px auto;
+  background-color: black;
+  padding: 25px;
+}
+ul a,
+li a:visited {
+  color: white;
+}
+.nav-item {
+  padding: 25px;
 }
