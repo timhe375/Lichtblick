@@ -1,0 +1,141 @@
+/**************************************************************/
+/* General Stylings */
+:root {
+  --akzentfarbe: plum;
+  --background: #2ea043;
+  --paddingcard: 44px 0px 44px 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+}
+button,
+button:hover {
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  margin: 0;
+}
+/*Header Styling*/
+
+.header-logo {
+  max-width: 100%;
+}
+.lichtblick-logo {
+  width: 150px;
+}
+.navigation,
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 4rem 2rem 2rem;
+}
+
+header {
+  position: relative;
+}
+
+/*Main Styling*/
+
+main {
+  display: block;
+  width: 100%;
+  padding: 0em;
+}
+
+section {
+  text-align: center;
+}
+.klimareformen-button {
+  background-color: var(--background);
+}
+.heizen-button {
+  background-color: var(--akzentfarbe);
+}
+.klimaneutral {
+  background-color: grey;
+  padding: 44px 0px 44px 0px;
+  margin-top: -4px;
+  margin-bottom: 20px;
+}
+.heizen {
+  background-color: var(--akzentfarbe);
+  padding: var(--paddingcard);
+}
+.klimareformen {
+  background-color: var(--background);
+  padding: var(--paddingcard);
+}
+
+article {
+  width: 500px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.mobilitaet {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: -15px;
+  position: relative;
+  z-index: -1;
+  border-radius: 10px 10px 0 0;
+}
+.card-section {
+  display: grid;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  flex-direction: row;
+}
+/*Responsive Gridbox*/
+@media screen and (max-width: 500px) {
+  .card-section,
+  article {
+    display: block;
+    width: auto;
+  }
+}
+
+/* Footer Styling*/
+footer {
+  width: 100%;
+  text-align: center;
+  margin: 55px auto;
+  background-color: black;
+  padding: 25px;
+}
+ul a,
+li a:visited {
+  color: white;
+}
+.nav-item {
+  padding: 25px;
+}
